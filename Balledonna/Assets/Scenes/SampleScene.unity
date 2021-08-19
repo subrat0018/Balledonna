@@ -960,6 +960,10 @@ PrefabInstance:
       propertyPath: m_Mass
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: -3040469465386969148, guid: 9dd7442bd43542845a8afb69015cf5b4, type: 3}
+      propertyPath: m_Constraints
+      value: 112
+      objectReference: {fileID: 0}
     - target: {fileID: 5810512749893682124, guid: 9dd7442bd43542845a8afb69015cf5b4, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.3544
@@ -1066,6 +1070,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5813084208130606227, guid: 9dd7442bd43542845a8afb69015cf5b4, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5813084208130606237, guid: 9dd7442bd43542845a8afb69015cf5b4, type: 3}
+      propertyPath: m_ReceiveShadows
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5813084208130606239, guid: 9dd7442bd43542845a8afb69015cf5b4, type: 3}
