@@ -24,7 +24,7 @@ public float BulletThrowingForce;
       GameObject bullet=Instantiate(BulletPrefab,transform.position+(transform.forward*offsetUnitFromFront), Quaternion.Euler(transform.eulerAngles-(90*Vector3.up)));
       bullet.GetComponent<Rigidbody>().AddForce(transform.forward*BulletThrowingForce);}        
         
-          
+          // changes done
       
     }
 }
