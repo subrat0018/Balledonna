@@ -3,25 +3,26 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class MouseLook : MonoBehaviour
-{public float mouseSensitivity=100f;
-public Transform gun;
-float xRotation=0f;
-float yRotation=0f;
-    /*void Start()
+{public float mouseSensitivity=10f;
+
+    float xRotation=0f;
+    float yRotation=0f;
+    [SerializeField] Transform Playerbody;
+    void Start()
     {
         Cursor.lockState=CursorLockMode.Locked;
-    }*/
+    }
 
-    // Update is called once per frame
+    
     void Update()
     {
-        float mouseX=Input.GetAxis("Mouse X")*mouseSensitivity*Time.deltaTime;
-        float mouseY=Input.GetAxis("Mouse Y")*mouseSensitivity*Time.deltaTime;
+        float mouseX=Input.GetAxis("Mouse X")*mouseSensitivity;
+        float mouseY=Input.GetAxis("Mouse Y")*mouseSensitivity;
         xRotation-=mouseY;
-        xRotation=Mathf.Clamp(xRotation,-22.5f,22.5f);
+        xRotation = Mathf.Clamp(xRotation, -90f, 90f);
         yRotation-=mouseX;
-        yRotation=Mathf.Clamp(yRotation,-50f,45f);
-        transform.localRotation=Quaternion.Euler(xRotation,-yRotation,0f);
+        transform.localRotation=Quaternion.Euler(xRotation,0f,0f);
+        Playerbody.Rotate(Vector3.up * mouseX);
       
     }
 }
