@@ -8,10 +8,10 @@ public class MouseLook : MonoBehaviour
     float xRotation=0f;
     float yRotation=0f;
     [SerializeField] Transform Playerbody;
-    void Start()
+    /*void Start()
     {
         Cursor.lockState=CursorLockMode.Locked;
-    }
+    }*/
 
     
     void Update()
