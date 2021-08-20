@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class BulletBehaviour : MonoBehaviour
 {  [SerializeField]float DestroyAfterTime; 
-[SerializeField]GameObject explosionPrefab;
+[SerializeField]particles explosion;
     // Start is called before the first frame update
     void Start()
     {
@@ -15,8 +15,9 @@ public class BulletBehaviour : MonoBehaviour
     void OnCollisionEnter(Collision col){
         if(col.collider.tag =="enemy"){
             Destroy(col.collider.gameObject);
+            
         }
-        Instantiate(explosionPrefab,transform.position,Quaternion.identity);
-        Destroy(this.gameObject);
+        explosion.Play();
+        Destroy(this.gameObject,0.1f);
     }
 }
