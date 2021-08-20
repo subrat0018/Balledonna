@@ -20,7 +20,7 @@ float yRotation=0f;
         xRotation-=mouseY;
         xRotation=Mathf.Clamp(xRotation,-22.5f,22.5f);
         yRotation-=mouseX;
-        yRotation=Mathf.Clamp(yRotation,-22.5f,22.5f);
+        yRotation=Mathf.Clamp(yRotation,-50f,45f);
         transform.localRotation=Quaternion.Euler(xRotation,-yRotation,0f);
       
     }

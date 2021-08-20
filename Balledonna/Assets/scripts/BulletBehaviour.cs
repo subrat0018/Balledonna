@@ -15,7 +15,6 @@ public class BulletBehaviour : MonoBehaviour
     void OnCollisionEnter(Collision col){
         if(col.collider.tag =="enemy"){
             Destroy(col.collider.gameObject);
-            
         }
         Instantiate(explosionPrefab,transform.position,Quaternion.identity);
         Destroy(this.gameObject);
