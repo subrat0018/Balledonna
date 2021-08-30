@@ -55,3 +55,15 @@ The following packages were added:
   com.unity.analytics@3.2.2
   com.unity.package-manager-ui@2.0.3
   com.unity.purchasing@2.0.3
+
+=== Sun Aug 29 12:20:12 2021
+
+Packages were changed.
+Update Mode: updateDependencies
+
+The following packages were updated:
+  com.unity.ads from version 2.3.1 to 3.7.1
+  com.unity.analytics from version 3.2.2 to 3.5.3
+  com.unity.purchasing from version 2.0.3 to 3.2.2
+The following packages were removed:
+  com.unity.package-manager-ui@2.0.3
