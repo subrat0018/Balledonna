@@ -11,13 +11,13 @@ public class BulletBehaviour : MonoBehaviour
         Destroy(this.gameObject,DestroyAfterTime);
     }
 
-    // Update is called once per frame
-    void OnCollisionEnter(Collision col){
-        if(col.collider.tag =="enemy"){
-            Destroy(col.collider.gameObject);
+   
+   void OnCollisionEnter(Collision col){
+       //if(col.collider.tag =="enemy"){
+       //     Destroy(col.collider.gameObject);
             
-        }
-        explosion.Play();
+       // }
+       // explosion.Play();
         
         KillCounter.instance.killCount++;
         KillCounter.instance.UpdateKillCounterUI();

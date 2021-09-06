@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -569,6 +569,7 @@ GameObject:
   - component: {fileID: 732260752}
   - component: {fileID: 732260754}
   - component: {fileID: 732260753}
+  - component: {fileID: 732260755}
   m_Layer: 5
   m_Name: Image
   m_TagString: Untagged
@@ -633,6 +634,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 732260751}
   m_CullTransparentMesh: 1
+--- !u!114 &732260755
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 732260751}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ff7d647f984b7844864ec93c53c7605, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  killCounter_TMP: {fileID: 328872981}
+  killCount: 0
 --- !u!1 &804255929
 GameObject:
   m_ObjectHideFlags: 0
@@ -1101,7 +1116,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c14ffbb431495f747b8bdc8f246a1c79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mouseSensitivity: 10
+  mouseSensitivity: 2
   Playerbody: {fileID: 1901161537}
 --- !u!1 &1150987588
 GameObject:
