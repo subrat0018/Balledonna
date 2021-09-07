@@ -19,9 +19,10 @@ public class HealthDamage : MonoBehaviour
             dealdamage();
         }
          if(currHealth <= 0){
+               explosion.Play();
             Destroy(this.gameObject);
         }
-         explosion.Play();
+       
     }
     void dealdamage(){
         currHealth -= 40;
