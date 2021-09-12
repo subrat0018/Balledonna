@@ -17,6 +17,7 @@ public class BulletBehaviour : MonoBehaviour
        //     Destroy(col.collider.gameObject);
             
        // }
+       Debug.Log(col.collider.tag);
         explosion.Play();
         
         KillCounter.instance.killCount++;
