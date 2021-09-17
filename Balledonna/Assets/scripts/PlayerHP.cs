@@ -7,6 +7,7 @@ public class PlayerHP : MonoBehaviour
     [SerializeField] Slider Playerhealth;
      private int maxmhealth;
      private int hp;
+    public GameController gameControl;
     void Start()
     {
         maxmhealth = 100;
@@ -17,6 +18,7 @@ public class PlayerHP : MonoBehaviour
             takedamage();
         }
          if(hp<=0){
+            gameControl.GameOver();
             Time.timeScale = 0;
         }
     }
