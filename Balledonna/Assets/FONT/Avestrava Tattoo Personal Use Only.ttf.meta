@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 60d4522f71a46eb478cf2860484f469e
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Avestrava Personal Use Only
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 0b0e46adedd8cea43b49ff31607a4f16, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
