@@ -97,8 +97,10 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 0}
-  m_LightingSettings: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: aaba233348172bd48aecb8dc69530607,
+    type: 2}
+  m_LightingSettings: {fileID: 4890085278179872738, guid: 49c2fdbe47369fe48bf14e8f13ca7cc9,
+    type: 2}
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -2609,6 +2611,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Playerhealth: {fileID: 421381399}
   gameControl: {fileID: 739486631}
+  playerControl: {fileID: 1901161538}
+  enemyGeneration: {fileID: 1348112890}
+  gunControl: {fileID: 1473286152}
 --- !u!65 &1473286158
 BoxCollider:
   m_ObjectHideFlags: 0

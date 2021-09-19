@@ -8,6 +8,9 @@ public class PlayerHP : MonoBehaviour
      private int maxmhealth;
      private int hp;
     public GameController gameControl;
+    public PlayControl playerControl;
+    public GenerateEnemy enemyGeneration;
+    public GunController gunControl;
     void Start()
     {
         maxmhealth = 100;
@@ -18,8 +21,11 @@ public class PlayerHP : MonoBehaviour
             takedamage();
         }
          if(hp<=0){
+            // Time.timeScale = 0;
+            playerControl.enabled = false;
+            enemyGeneration.enabled = false;
+            gunControl.enabled = false;
             gameControl.GameOver();
-            Time.timeScale = 0;
         }
     }
     void takedamage(){
