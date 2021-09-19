@@ -27,5 +27,8 @@ public class KillCounter : MonoBehaviour
    {
             killCounter_TMP.text=killCount.ToString();
    }
-
+    public int GetCount()
+    {
+        return killCount;
+    }
 }

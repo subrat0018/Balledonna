@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.447015, g: 0.49690574, b: 0.5750662, a: 1}
+  m_IndirectSpecularColor: {r: 0.44701523, g: 0.49690634, b: 0.5750669, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -97,8 +97,10 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 0}
-  m_LightingSettings: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: aaba233348172bd48aecb8dc69530607,
+    type: 2}
+  m_LightingSettings: {fileID: 4890085278179872738, guid: 49c2fdbe47369fe48bf14e8f13ca7cc9,
+    type: 2}
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -785,7 +787,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 435312012}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 739486631}
+        m_TargetAssemblyTypeName: GameController, Assembly-CSharp
+        m_MethodName: Quit
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &435312012
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -906,7 +920,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 450330379}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 739486631}
+        m_TargetAssemblyTypeName: GameController, Assembly-CSharp
+        m_MethodName: Restart
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &450330379
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1407,6 +1433,52 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   killCounter_TMP: {fileID: 328872981}
   killCount: 0
+--- !u!1 &739486630
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 739486632}
+  - component: {fileID: 739486631}
+  m_Layer: 0
+  m_Name: GameController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &739486631
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 739486630}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57dd358e01375e94380f76632165b02f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  score: {fileID: 746816547}
+  gameOverPanel: {fileID: 1332900099}
+  kill: {fileID: 328872983}
+--- !u!4 &739486632
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 739486630}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &746816545
 GameObject:
   m_ObjectHideFlags: 0
@@ -1419,7 +1491,7 @@ GameObject:
   - component: {fileID: 746816548}
   - component: {fileID: 746816547}
   m_Layer: 5
-  m_Name: 50 pts
+  m_Name: Points
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1477,7 +1549,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 50 Points
+  m_Text: 000 Points
 --- !u!222 &746816548
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2334,7 +2406,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1332900100
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2538,6 +2610,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Playerhealth: {fileID: 421381399}
+  gameControl: {fileID: 739486631}
+  playerControl: {fileID: 1901161538}
+  enemyGeneration: {fileID: 1348112890}
+  gunControl: {fileID: 1473286152}
 --- !u!65 &1473286158
 BoxCollider:
   m_ObjectHideFlags: 0
