@@ -30,6 +30,7 @@ public class PlayerHP : MonoBehaviour
     }
     void takedamage(){
         hp -= 14;
+     FindObjectOfType<AudioManager>().Play("takedamage");
         Playerhealth.value = hp;
     }
 }
