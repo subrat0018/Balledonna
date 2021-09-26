@@ -10,7 +10,7 @@ public class PlayerHP : MonoBehaviour
     public GameController gameControl;
     public PlayControl playerControl;
     public GenerateEnemy enemyGeneration;
-    public GunController gunControl;
+  // public GunController gunControl;
     void Start()
     {
         maxmhealth = 100;
@@ -24,7 +24,7 @@ public class PlayerHP : MonoBehaviour
             // Time.timeScale = 0;
             playerControl.enabled = false;
             enemyGeneration.enabled = false;
-            gunControl.enabled = false;
+           // gunControl.enabled = false;
             gameControl.GameOver();
         }
     }

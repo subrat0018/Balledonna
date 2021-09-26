@@ -4,7 +4,7 @@ using UnityEngine;
 using  UnityEngine.AI;
 public class EnemyController : MonoBehaviour
 {
-    public float lookradius = 12f;
+    public float lookradius = 45f;
     Transform target;
    
     NavMeshAgent agent;

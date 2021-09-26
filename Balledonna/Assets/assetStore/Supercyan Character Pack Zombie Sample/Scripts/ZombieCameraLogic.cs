@@ -3,7 +3,7 @@
 public class ZombieCameraLogic : MonoBehaviour
 {
 
-    [SerializeField] private Transform m_target = null;
+    [SerializeField] private Transform m_target ;
     private float m_distance = 2f;
     private float m_height = 1;
     private float m_lookAtAroundAngle = 180;
