@@ -6,11 +6,11 @@ public class HealthDamage : MonoBehaviour
 {
    [SerializeField] Slider slider;
    [SerializeField] particles explosion;
-   private int currHealth;
-   private int maxhealth;
+   private float currHealth;
+   private float maxhealth;
     void Start()
     {
-         maxhealth = 100;
+         maxhealth = 100f;
         currHealth = maxhealth;
     }
 

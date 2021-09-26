@@ -16,9 +16,15 @@ IEnumerator enemyDrop(){
     while(enemyCount < 40){
         xPos =Random.Range(4,27);
         zPos = Random.Range(-28,25);
-        Debug.Log(zPos);
         Instantiate(TheEnemy,new Vector3(xPos,1,zPos),Quaternion.identity);
-        yield return new WaitForSeconds(5f);
+        yield return new WaitForSeconds(3f);
+        enemyCount+=1;
+    }
+    while(enemyCount >=40 && enemyCount<=80){
+         xPos =Random.Range(4,27);
+        zPos = Random.Range(-28,25);
+        Instantiate(TheEnemy,new Vector3(xPos,1,zPos),Quaternion.identity);
+        yield return new WaitForSeconds(1f);
         enemyCount+=1;
     }
 }
